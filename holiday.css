@@ -1,0 +1,144 @@
+
+  body {
+    font-family: montserrat;
+  }
+  
+  nav {
+    background: #f3430d;
+    height: 80px;
+    width: 100%;
+  }
+  
+  /* label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+  
+  }
+  
+  
+  nav ul li {
+  
+    display: block;
+  
+    margin: 0 5px;
+    margin-bottom: 20px;
+  }
+  
+  nav ul li a {
+    color: rgb(145, 142, 142);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  } */
+  
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    cursor: pointer;
+    margin-left: 5rem;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: .5px;
+    padding-bottom: .5px;
+  }
+  
+  .checkbtn:hover {
+    background-color: #b6411e;
+  }
+  
+  .checkbtn:active {
+    background-color: #a59590;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  /* #sidebar {
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    background-color: rgb(53, 52, 52);
+  
+  } */
+  
+  .table {
+    /* margin-top: 5%; */
+    margin-left: 17%;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  .left {
+    float: right;
+  
+  }
+  
+  #sidebar {
+    position: fixed;
+    width: 12%;
+    height: 100%;
+    background-color: rgb(24, 23, 23);
+  
+  }
+  
+  .image {
+    border-radius: 20px;
+  
+    width: 50%;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    margin-top: 0;
+  }
+  
+  .name {
+    display: flex-end;
+    margin-left: 98rem;
+  
+  }
+  
+  /* p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  } */
+  p.cba {
+    float: right;
+    margin-right: 41px;
+  
+  }
+  
+  .on {
+    float: left;
+    margin-left: 58px;
+    font-size: small;
+    text-decoration: none;
+    text-align: none;
+    color: white;
+    margin-left: 100px;
+  }
+  
+  .fixed-top {
+    position: relative;
+  }
+  
+  .ons {
+    float: left;
+    margin-left: 100px;
+    font-size: small;
+    text-decoration: none;
+    text-align: none;
+    color: white;
+    margin-left: 100px;
+  }
+  .notify a{
+  color:white;
+  font-size: 15px;
+  text-decoration: none;
+  
+  }

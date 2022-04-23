@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>side Dashboard Template
+    </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="landingpage.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+      <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+      <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+</head>
+<body>
+     
+    <input type="checkbox"id="check">
+
+<!-- header aera -->
+<header>
+    <label for="check">
+        <i class="fa-solid fa-bars" id="sidebar_btn"></i> 
+    </label>
+<div class="left_area">
+    <h3>Office<span>Management</span></h3>
+</div>
+<div class="right_area">
+    <a href="#" class="logout_btn">logout</a>
+</div>
+</header>
+<!-- header area end -->
+<!-- sidebar start -->
+<div class="sidebar">
+<center>
+    <img src="photo.jpg" class="profile_image" alt="">
+    <h4>
+        Shibaa Adhikari
+        <a href="#" class="online"><i class="fa fa-circle text-success"></i> Online</a>
+    </h4>
+    <div class="input-group">
+        <input type="text" class="form-control" id="desc" name="desc" placeholder="comment if any">
+        <span class="input-group-btn">
+            <button type="submit" id="action_btn" class="btn btn-warning">Punch Out</button>
+        </span>
+    </div>
+</center>
+<li class="header">NAVIGATION</li>
+
+<a href="salary.html"> <i class="fa-solid fa-money-bill-1"></i><span>Salary slips</span></a>
+<a href="leave.html"> <i class="fa-solid fa-arrow-right-from-bracket"></i><span>leaves</span></a>
+<a href="holiday.html"><i class="fa-solid fa-calendar"></i> <span>holidays</span></a>
+<a href="employmentmanagement.html"> <i class="fa-solid fa-desktop"></i><span>Employee Management</span></a>
+<a href="leavemanagement.html"> <i class="fa-solid fa-desktop"></i><span>leavemanagement</span></a>
+<a href="attendance.html"> <i class="fa-solid fa-desktop"></i><span>Attendance</span></a>
+
+
+    
+
+
+
+</div>
+<div class="content">
+    <div class="top">
+        <h1 style="padding-left: 17rem; padding-top:7rem;">Leave</h1>
+        <div>
+            <navi aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item "style="padding-left:130rem"><a href="index.html"><i class="fa fa-dashboard"></i>Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Leave</li>
+
+                </ol>
+            </navi>
+        </div>
+    </div>
+   <section>
+    <div class="row" style="padding-left: 16rem; ">
+        <!-- <div class="col-lg-4 border box border border-ligh shadow-lg p-3 mb-5 bg-body rounded"> -->
+        <div class="col-lg-4 box border border-ligh shadow-lg p-3 mb-5 bg-body rounded bod">
+            <div class="box">
+                <div class="box-header ">
+                    <h3 class="box-title">Apply for Leave</h3>
+                </div>
+                <div class="box-body">
+
+                    <div style="display:none;" class="form-group">
+                        <label for="leave_subject">Leave Subject</label>
+                        <input type="text" class="form-control" value="none" name="leave_subject"
+                            id="leave_subject" required="">
+                    </div>
+                    <div class="form-group has-error has-danger">
+                        <label for="leave_type">Leave Type</label>
+                        <select class="form-control" name="leave_type" id="leave_type" required="">
+                            <option value="">Please make a choice</option>
+                            <option value="Annual Leave">Annual Leave</option>
+                            <option value="Medical/Sick Leave">Medical/Sick Leave</option>
+                            <option value="Maternity Leave">Maternity Leave</option>
+                            <option value="Leave Without Pay">Leave Without Pay</option>
+                            <option value="Half Leave">Half Leave</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="leave_dates">Leave Dates (MM/DD/YYYY)</label>
+                        <input type="text" class="form-control multidatepicker" name="leave_dates"
+                            id="leave_dates" required="">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="leave_message">Leave Message</label>
+                        <textarea class="form-control" name="leave_message" id="leave_message" rows="10"
+                            required=""></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary disabled">Apply for Leave</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8 box border border-ligh shadow-lg p-3 mb-5 bg-body rounded bod ">
+            <div class="box">
+                <div class="box-header">
+                    <!-- <h3 class="box-title">My leaves</h3> -->
+                    
+                </div>
+                <div class="box-body">
+
+                    <div id="myleaves_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer">
+                        <div class="row  border-right">
+                            <div class="col-sm-9 show ">
+                                <div class="dataTables_length" id="myleaves_length"><label>Show</label>
+
+                                    <select name="myleaves_length" aria-controls="myleaves"
+                                        class=" input-sm">
+                                        <option value="10">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select> <label>entries</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div id="myleaves_filter" class="dataTables_filter"><label>Search:<input
+                                            type="search" class="form-control input-sm" placeholder=""
+                                            aria-controls="myleaves"></label></div>
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <table border="1" style="width:1000px" class="leaves">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">SUBJECT</th>
+                                        <th scope="col">DATES</th>
+                                        <th scope="col">MESSAGE</th>
+                                        <th scope="col">TYPE</th>
+                                        <th scope="col">STATUS</th>
+                                    </tr>
+                                </thead>
+
+                            </table>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="dataTables_info" id="myleaves_info" role="status"
+                                    aria-live="polite">Showing 0 to 0 of 0 entries</div>
+
+                                <navii aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                        </li>
+                                    </ul>
+                                </navii>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<!-- sidebar end -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

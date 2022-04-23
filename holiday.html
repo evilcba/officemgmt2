@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>side Dashboard Template
+    </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="landingpage.css">
+        <link rel="stylesheet" href="holidays.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+      <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+      <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+</head>
+<body>
+     
+    <input type="checkbox"id="check">
+
+<!-- header aera -->
+<header>
+    <label for="check">
+        <i class="fa-solid fa-bars" id="sidebar_btn"></i> 
+    </label>
+<div class="left_area">
+    <h3>Office<span>Management</span></h3>
+</div>
+<div class="right_area">
+    <a href="#" class="logout_btn">logout</a>
+</div>
+</header>
+<!-- header area end -->
+<!-- sidebar start -->
+<div class="sidebar">
+<center>
+    <img src="photo.jpg" class="profile_image" alt="">
+    <h4>
+        Shibaa Adhikari
+        <a href="#" class="online"><i class="fa fa-circle text-success"></i> Online</a>
+    </h4>
+    <div class="input-group">
+        <input type="text" class="form-control" id="desc" name="desc" placeholder="comment if any">
+        <span class="input-group-btn">
+            <button type="submit" id="action_btn" class="btn btn-warning">Punch Out</button>
+        </span>
+    </div>
+</center>
+<li class="header">NAVIGATION</li>
+<a href="salary.html"> <i class="fa-solid fa-money-bill-1"></i><span>Salary slips</span></a>
+<a href="leave.html"> <i class="fa-solid fa-arrow-right-from-bracket"></i><span>leaves</span></a>
+<a href="holiday.html"><i class="fa-solid fa-calendar"></i> <span>holidays</span></a>
+<a href="employmentmanagement.html"> <i class="fa-solid fa-desktop"></i><span>Employee Management</span></a>
+<a href="leavemanagement.html"> <i class="fa-solid fa-desktop"></i><span>leavemanagement</span></a>
+<a href="attendance.html"> <i class="fa-solid fa-desktop"></i><span>Attendance</span></a>
+
+    
+
+
+
+</div>
+<div class="content">
+    <div class="top">
+        <h1 style="padding-left: 17rem; padding-top:7rem;">Holiday</h1>
+        <div>
+            <navi aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item "style="padding-left:130rem"><a href="index.html"><i class="fa fa-dashboard"></i>Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">My Profile</li>
+
+                </ol>
+            </navi>
+        </div>
+    </div>
+    
+   <section>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"style="margin-left: 130rem;"> Add Holiday</a> </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Holidays</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"><strong>Holiday Title</strong></label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label"><strong>Descriptions</strong></label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="col-form-label"><strong>Holiday Date</strong></label>
+                   <input type="date" class="form-control" id="date" >
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1"><strong>Complusory Holiday</strong></label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2"><strong>Restricted Holiday</strong></label>
+                  </div>
+                 
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Add holidays</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- <button type="button" class="btn btn-primary notify" style="margin-left: 110rem;"><a href="addholiday.html" >Add Holiday</a></button> -->
+    <section class="content-header">
+        <navi aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Holidays</li>
+            </ol>
+        </navi>
+    </section>
+    <table class=" table table-striped " border="1">
+
+        <!-- <input type="search" class="left">
+        <label class="left le">Search:</label> -->
+        <div class="entries">
+                
+            <div class="dataTables_length" id="myleaves_length ">
+                <label style="padding-left: 19rem; margin-bottom: 5rem;"> Show</label>
+                <label>
+                    <select name="myleaves_length" aria-controls="myleaves"
+                        class="form-control input-sm">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
+                </label><label>entries</label>
+                <div class="search" style="padding-left: 100rem;">
+                    <label>search</label>
+                    <label><input type="search" class="form-control input-sm" placeholder=""
+                            aria-controls="myleaves"></label>
+                </div>    
+            
+        </div>
+      
+    </div>
+        <tbody>
+            <tr col-lg-3>
+                <th>S.N</th>
+                <th>Holiday Title</th>
+                <th>Holiday Date</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nepali New Year 2079</td>
+                <td>14/04/2022</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Saturday</td>
+                <td>23/04/2022</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Saturday</td>
+                <td>30/04/2022</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Labor Day</td>
+                <td>01/05/2022</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Saturday</td>
+                <td>07/05/2022</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Saturday</td>
+                <td>14/05/2022</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Buddha Jayanti/Ubhauli Parbha</td>
+                <td>16/05/2022</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Gadatantra Dibas</td>
+                <td>29/05/2022</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Holi</td>
+                <td>29/06/2022</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>chhat</td>
+                <td>12/07/2022</td>
+            </tr>
+        </tbody>
+        <!-- <p class="entries">Showing 1 to 7 0f 9 entries</p> -->
+    </table>
+</div>
+</section>
+<!-- table ends -->
+
+
+<!-- sidebar end -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

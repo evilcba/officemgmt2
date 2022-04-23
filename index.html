@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>side Dashboard Template
+    </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="landingpage.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+      <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+      <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+</head>
+<body>
+     
+    <input type="checkbox"id="check">
+
+<!-- header aera -->
+<header>
+    <label for="check">
+        <i class="fa-solid fa-bars" id="sidebar_btn"></i> 
+    </label>
+<div class="left_area">
+    <h3>Office<span>Management</span></h3>
+</div>
+<div class="right_area">
+    <a href="#" class="logout_btn">logout</a>
+</div>
+</header>
+<!-- header area end -->
+<!-- sidebar start -->
+<div class="sidebar">
+<center>
+    <img src="photo.jpg" class="profile_image" alt="">
+    <h4>
+        Shibaa Adhikari
+        <a href="#" class="online"><i class="fa fa-circle text-success"></i> Online</a>
+    </h4>
+    <div class="input-group">
+        <input type="text" class="form-control" id="desc" name="desc" placeholder="comment if any">
+        <span class="input-group-btn">
+            <button type="submit" id="action_btn" class="btn btn-warning">Punch Out</button>
+        </span>
+    </div>
+</center>
+<li class="header">NAVIGATION</li>
+
+<a href="salary.html"> <i class="fa-solid fa-money-bill-1"></i><span>Salary slips</span></a>
+<a href="leave.html"> <i class="fa-solid fa-arrow-right-from-bracket"></i><span>leaves</span></a>
+<a href="holiday.html"><i class="fa-solid fa-calendar"></i> <span>holidays</span></a>
+<a href="employmentmanagement.html"> <i class="fa-solid fa-desktop"></i><span>Employee Management</span></a>
+<a href="leavemanagement.html"> <i class="fa-solid fa-desktop"></i><span>leavemanagement</span></a>
+<a href="attendance.html"> <i class="fa-solid fa-desktop"></i><span>Attendance</span></a>
+
+
+
+
+</div>
+<div class="content">
+    <div class="top">
+        <h1 style="padding-left: 17rem; padding-top:7rem;">My Profile</h1>
+        <div>
+            <navi aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item "style="padding-left:130rem"><a href="index.html"><i class="fa fa-dashboard"></i>Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">My Profile</li>
+
+                </ol>
+            </navi>
+        </div>
+    </div>
+    <section class="content" style="margin-left:120px">
+        <div class="row" id="margin" style="margin-left:120px">
+
+            <div class="col-lg-8 border">
+                <div class="box border border-ligh shadow-lg p-3 mb-5 bg-body rounded bod">
+                    <div class="box-header">
+                        <h3 class="box-title">Edit Profile Details</h3>
+                    </div>
+                    <div class="box-body leftmar">
+                        <form method="POST" role="form" data-toggle="validator" id="profile-form" novalidate="true">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="first_name"><strong>First Name </strong></label>
+                                        <input type="text" class="form-control" name="first_name" id="first_name"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="last_name"><strong>Last Name </strong></label>
+                                        <input type="text" class="form-control" name="last_name" id="last_name"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="dob"><strong>Date of Birth (MM/DD/YYYY)</strong> </label>
+                                        <input type="text" class="form-control datepicker" name="dob" id="dob"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="gender"><strong>Gender</strong> </label>
+                                        <select class="form-control" name="gender" id="gender" required="">
+                                            <option value="">Please make a choice</option>
+                                            <option value="male">
+                                                Male
+                                            </option>
+                                            <option value="female" selected="">
+                                                Female
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label for="address"><strong>Address </strong></label>
+                                        <input type="text" class="form-control" name="address" id="address"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="city"><strong>City</strong></label>
+                                        <input type="text" class="form-control" name="city" id="city" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="state"><strong>State </strong></label>
+                                        <input type="text" class="form-control" name="state" id="state" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="country"><strong>Country</strong> </label>
+                                        <input type="text" class="form-control" name="country" id="country"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="merital_status"> <strong>Merital Status</strong></label>
+                                        <input type="text" class="form-control" name="merital_status"
+                                            id="merital_status" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="nationality"><strong>Nationality </strong></label>
+                                        <input type="text" class="form-control" name="nationality" id="nationality"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="email"><strong>Email </strong></label>
+                                        <input type="email" class="form-control" name="email" id="email"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="mobile"><strong>Mobile </strong></label>
+                                        <input type="text" class="form-control" name="mobile" id="mobile"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="telephone"><strong>Telephone</strong></label>
+                                        <input type="text" class="form-control" name="telephone" id="telephone"
+                                            value="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="identity_doc"><strong>Identity Document</strong></label>
+                                        <select class="form-control" name="identity_doc" id="identity_doc"
+                                            required="">
+                                            <option value="">Please make a choice</option>
+                                            <option value="Voter Id">Voter Id</option>
+                                            <option value="Citizenship" selected="">Citizenship</option>
+                                            <option value="Driving License">Driving License</option>
+                                            <option value="Passport">Passport</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="identity_no"><strong>Identity No</strong></label>
+                                        <input type="text" class="form-control" name="identity_no" id="identity_no"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="emp_type"><strong>Employment Type</strong></label>
+                                        <select class="form-control" name="emp_type" id="emp_type" required="">
+                                            <option value="">Please make a choice</option>
+                                            <option value="Part-time employee">Part-time employee</option>
+                                            <option value="Intern">Intern</option>
+                                            <option value="Holiday worker">Holiday worker</option>
+                                            <option value="Permanent position" selected="">Permanent position
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="joining_date"><strong>Joining Date (MM/DD/YYYY)</strong></label>
+                                        <input type="text" class="form-control datepicker" name="joining_date"
+                                            id="joining_date" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="blood_group"><strong>Blood group</strong></label>
+                                        <input type="text" class="form-control" name="blood_group" id="blood_group"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="designation"><strong>Designation</strong></label>
+                                        <input type="text" class="form-control" name="designation" id="designation"
+                                            value="" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="department"><strong>Department</strong></label>
+                                        <input type="text" class="form-control" name="department" id="department"
+                                            value="" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="pan_no"><strong>PAN No.</strong></label>
+                                        <input type="text" class="form-control" name="pan_no" id="pan_no" value=""
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="bank_name"><strong>Bank Name</strong></label>
+                                        <input type="text" class="form-control" name="bank_name" id="bank_name"
+                                            value="" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="account_no"><strong>Bank A/C No.</strong></label>
+                                        <input type="text" class="form-control" name="account_no" id="account_no"
+                                            value="" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="ifsc_code"><strong>IFSC Code</strong></label>
+                                        <input type="text" class="form-control" name="ifsc_code" id="ifsc_code"
+                                            value="" required="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="form-group">
+                                        <label for="pf_account"><strong>PF A/C No.</strong></label>
+                                        <input type="text" class="form-control" name="pf_account" id="pf_account"
+                                            value="" required="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary ">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="box border border-ligh shadow-lg p-3 mb-5 bg-body rounded">
+                    <div class="box-header">
+                        <h3 class="box-title">Change Password</h3>
+                    </div>
+                    <div class="box-body">
+                        <form method="POST" role="form" data-toggle="validator" id="password-form"
+                            novalidate="true">
+                            <div class="form-group">
+                                <label for="old_password"><strong>Existing Password: </strong></label>
+                                <input type="password" class="form-control" name="old_password" id="old_password"
+                                    required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="new_password"><strong>New Password:</strong> </label>
+                                <input type="password" class="form-control" name="new_password" id="new_password"
+                                    required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="password_conf"><strong>Confirm Password:</strong> </label>
+                                <input type="password" class="form-control" name="password_conf" id="password_conf"
+                                    required="">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary"><strong>Submit</strong></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+</div>
+
+
+<!-- sidebar end -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
